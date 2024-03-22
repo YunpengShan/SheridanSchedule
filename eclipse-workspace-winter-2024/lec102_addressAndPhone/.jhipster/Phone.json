@@ -1,0 +1,17 @@
+{
+  "annotations": {},
+  "applications": "*",
+  "entityTableName": "phone",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Phone",
+  "relationships": []
+}

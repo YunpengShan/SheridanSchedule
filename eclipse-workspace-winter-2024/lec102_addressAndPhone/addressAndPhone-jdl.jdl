@@ -1,0 +1,13 @@
+entity Address {
+    id Long,
+    street String,
+    city String,
+    provinceOrState String,
+    country String
+}
+
+entity Phone {
+    id Long,
+    phone String
+}
+
