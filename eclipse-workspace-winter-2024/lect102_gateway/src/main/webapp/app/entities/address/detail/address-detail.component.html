@@ -1,0 +1,46 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (address) {
+      <div>
+        <h2 data-cy="addressDetailsHeading"><span jhiTranslate="gatewayApp.address.detail.title">Address</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="gatewayApp.address.id">Id</span></dt>
+          <dd>
+            <span>{{ address.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.address.street">Street</span></dt>
+          <dd>
+            <span>{{ address.street }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.address.city">City</span></dt>
+          <dd>
+            <span>{{ address.city }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.address.provinceOrState">Province Or State</span></dt>
+          <dd>
+            <span>{{ address.provinceOrState }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.address.country">Country</span></dt>
+          <dd>
+            <span>{{ address.country }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/address', address.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

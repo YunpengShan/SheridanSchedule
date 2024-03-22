@@ -1,0 +1,24 @@
+{
+  "gatewayApp": {
+    "phone": {
+      "home": {
+        "title": "Phones",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Phone",
+        "createOrEditLabel": "Create or edit a Phone",
+        "notFound": "No Phones found"
+      },
+      "created": "A new Phone is created with identifier {{ param }}",
+      "updated": "A Phone is updated with identifier {{ param }}",
+      "deleted": "A Phone is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Phone {{ id }}?"
+      },
+      "detail": {
+        "title": "Phone"
+      },
+      "id": "Id",
+      "phone": "Phone"
+    }
+  }
+}

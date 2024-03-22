@@ -1,0 +1,34 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (phone) {
+      <div>
+        <h2 data-cy="phoneDetailsHeading"><span jhiTranslate="gatewayApp.phone.detail.title">Phone</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="gatewayApp.phone.id">Id</span></dt>
+          <dd>
+            <span>{{ phone.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.phone.phone">Phone</span></dt>
+          <dd>
+            <span>{{ phone.phone }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/phone', phone.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (student) {
+      <div>
+        <h2 data-cy="studentDetailsHeading"><span jhiTranslate="gatewayApp.student.detail.title">Student</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="gatewayApp.student.id">Id</span></dt>
+          <dd>
+            <span>{{ student.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.student.name">Name</span></dt>
+          <dd>
+            <span>{{ student.name }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.student.email">Email</span></dt>
+          <dd>
+            <span>{{ student.email }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.student.birthday">Birthday</span></dt>
+          <dd>
+            <span>{{ student.birthday | formatMediumDate }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/student', student.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

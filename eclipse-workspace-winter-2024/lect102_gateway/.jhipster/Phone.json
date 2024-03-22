@@ -1,0 +1,22 @@
+{
+  "annotations": {
+    "changelogDate": "20240322003302"
+  },
+  "applications": "*",
+  "databaseType": "sql",
+  "entityTableName": "phone",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    }
+  ],
+  "microservicePath": "../lect102_addressAndPhone",
+  "name": "Phone",
+  "relationships": [],
+  "searchEngine": "no"
+}

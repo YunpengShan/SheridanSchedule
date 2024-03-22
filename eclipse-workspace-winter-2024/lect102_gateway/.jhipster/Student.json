@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "changelogDate": "20240322002504"
+  },
+  "applications": "*",
+  "databaseType": "sql",
+  "entityTableName": "student",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthday",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "microservicePath": "../lec102_student",
+  "name": "Student",
+  "relationships": [],
+  "searchEngine": "no"
+}
