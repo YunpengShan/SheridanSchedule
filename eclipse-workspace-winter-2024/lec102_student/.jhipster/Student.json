@@ -1,0 +1,25 @@
+{
+  "annotations": {},
+  "applications": "*",
+  "entityTableName": "student",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthday",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Student",
+  "relationships": []
+}

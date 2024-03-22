@@ -1,0 +1,6 @@
+entity Student {
+    id Long,
+    name String,
+    email String,
+    birthday LocalDate
+}
