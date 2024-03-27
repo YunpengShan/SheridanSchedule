@@ -1,0 +1,30 @@
+.app-container {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  min-height: 100vh; /* Minimum height to fill the viewport */
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr; /* One block on the left, one on the right */
+  flex: 1; /* Allows content wrapper to grow and fill available space, pushing the footer down */
+  overflow: auto; /* Adds scroll to the wrapper if content overflows */
+}
+
+.left-panel {
+  background-color: #FFFFFF; /* Example background color */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+}
+
+.right-panel {
+  background-color: #84B5D3;
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+}
+
+.sticky-footer {
+  background: #f0f0f0; /* Change as needed */
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Orelega One';
+    src: url('https://fonts.google.com/specimen/Orelega+One') format('truetype'); /* Replace 'path/to/OrelegaOne-Regular.ttf' with the actual path to the font file */
+}
+
+.navbutton {
+    height: 4rem;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /*padding-left: 1.5em;*/
+    background-color: #C0D7D8;
+    /*list-style: none;*/
+    text-decoration: none;
+    font-family: 'Orelega One', sans-serif;
+    border-radius: 0;
+    border-bottom: #3E5622 1px solid;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    width: 27.8125rem;
+}

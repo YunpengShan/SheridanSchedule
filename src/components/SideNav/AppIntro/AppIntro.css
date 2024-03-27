@@ -1,0 +1,20 @@
+.appIntro {
+    /*color: #1D3557;*/
+    font-size: 2em;
+    margin-top: 0.1em;
+    text-align: center;
+    color: coral;
+}
+
+.appWord {
+    font-size: 2em;
+    margin-top: 0.1em;
+    text-align: center;
+    color: #1D3557;
+}
+
+.greeting {
+    font-size: 2em;
+    margin-top: 0.1em;
+    text-align: center;
+}
