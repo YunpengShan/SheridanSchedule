@@ -1,0 +1,52 @@
+{
+  "username": "Prof. Yunpeng",
+  "school": "Sheridan College",
+  "department": "Computer Science",
+  "email": "hi@hi.com",
+  "uuid": "41a90857-5184-4c6d-8177-ad5d70261070",
+  "courses": [
+    {
+      "name": "CS101",
+      "course_material": [
+        {
+          "filename": "cs101_textbook.pdf"
+        },
+        {
+          "filename": "cs101_lecture_notes.pdf"
+        }
+      ],
+      "assignments": [
+        {
+          "assignment_name": "quiz_1",
+          "rubric": "quiz1_rubric1.pdf",
+          "stats": {
+            "average": 80,
+            "median": 70,
+            "num_submission": 100,
+            "graded_submission": 96
+          },
+          "submissions": [
+            {
+              "submission_name": "quiz1.pdf",
+              "submission_student_id": 10001,
+              "graded": false,
+              "submission_index": 1
+            },
+            {
+              "submission_name": "quiz1_final.pdf",
+              "submission_student_id": 10002,
+              "graded": false,
+              "submission_index": 2
+            },
+            {
+              "submission_name": "myquiz1.pdf",
+              "submission_student_id": 10003,
+              "graded": false,
+              "submission_index": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
